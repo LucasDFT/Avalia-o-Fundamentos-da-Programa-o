@@ -21,7 +21,7 @@ Isso roda a função `main()`, que cria um paciente de cada tipo e testa todos o
 
 # Classes do sistema
 
-# 1. Paciente (superclasse)
+# 1 - Paciente (superclasse)
 
 Base do sistema. Básicamente o cadastro que qualquer paciente precisa ter. 
 
@@ -50,7 +50,7 @@ Métodos:
    False -> mostra só nome, prontuário e tipo sanguíneo
    True -> mostra os 6 atributos
 
-# 2. PacienteParticular (subclasse)
+# 2 - PacienteParticular (subclasse)
 
 Herda de Paciente (`from paciente import Paciente`). É o paciente que a qual realiza os pagamentos de forma direta para o sistema.
 
@@ -78,7 +78,7 @@ Métodos:
  `exibir_informacoes(detalhado=False)`
   Chama `super().exibir_informacoes(detalhado)` e depois acrescenta forma de pagamento e desconto de fidelidade quando detalhado=True.
 
-# 3. PacienteConvenio (subclasse)
+# 3 - PacienteConvenio (subclasse)
 
 Herda de Paciente. Paciente atendido via plano de saúde.
 
@@ -99,13 +99,20 @@ Métodos:
  `exibir_informacoes(detalhado=False)`
   Mesmo esquema da outra subclasse: chama `super()` e acrescenta convênio e número da carteirinha.
 
-# 4. main.py
+# 4 - main.py
 
 Importa as duas subclasses e demonstra:
 
 1 - Criação de um PacienteParticular e um PacienteConvenio
+
 2 - Exibição resumida e completa (detalhado=False / True)
+
 3 - Registro de atendimentos
+
 4 - Cálculo de valor final (particular) e autorização de procedimento (convênio)
+
 5 - Polimorfismo: uma lista `pacientes = [paciente1, paciente2]` percorrida em loop, chamando `exibir_informacoes()`
+
+
+# 5 - Feito por Lucas da Fonseca Tavares
 
