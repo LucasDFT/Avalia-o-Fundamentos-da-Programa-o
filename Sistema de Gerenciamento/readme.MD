@@ -1,11 +1,10 @@
 # Estrutura do projeto
 
 ```
-clinica/
-paciente.py              # Superclasse
-paciente_particular.py   # Subclasse
-paciente_convenio.py     # Subclasse
-main.py                  # Ponto de entrada / demonstração de uso
+paciente.py ->             # Superclasse
+paciente_particular.py ->  # Subclasse
+paciente_convenio.py ->    # Subclasse
+main.py ->                 # Ponto de entrada / demonstração de uso
 ```
 
 Todos os arquivos devem estar na mesma pasta para os imports funcionarem.
